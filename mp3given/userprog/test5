@@ -1,0 +1,2 @@
+#LRU
+./nachos -M 10 5 -x ../test/tc2 > test.5.out

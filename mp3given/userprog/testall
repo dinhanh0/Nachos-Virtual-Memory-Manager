@@ -1,0 +1,44 @@
+#fifo
+echo "case 0:  FIFO, no buffer"
+./nachos -M 0 -1 -x ../test/tc2 > test.0.out 
+echo ""
+echo ""
+#echo "case 1:  FIFO, buffer_size = 10"
+#./nachos -M 10 -1 -x ../test/tc2 > test.1.out
+
+#LRU
+echo ""
+echo ""
+echo "case 2:  LRU, no buffer, bits=5"
+./nachos -M 0 5 -x ../test/tc2 > test.2.out
+echo ""
+echo ""
+echo "case 3:  LRU, no buffer, bits=10"
+./nachos -M 0 10 -x ../test/tc2 > test.3.out
+echo ""
+#echo ""
+#echo "case 4:  LRU, buffer_size=5, bits=5"
+#./nachos -M 5 5 -x ../test/tc2 > test.4.out
+#echo ""
+#echo ""
+#echo "case 5:  LRU, buffer_size=10, bits=5"
+#./nachos -M 10 5 -x ../test/tc2 > test.5.out
+#echo ""
+#echo ""
+#echo "case 6:  LRU, buffer_size=10, bits=10"
+#./nachos -M 10 10 -x ../test/tc2 > test.6.out
+
+#ESC
+echo ""
+echo ""
+echo "case 7:  ESC, buffer_size=0"
+./nachos -M 0 0 -x ../test/tc2 > test.7.out
+echo ""
+#echo ""
+#echo "case 8:  ESC, buffer_size=5"
+#./nachos -M 5 0 -x ../test/tc2 > test.8.out
+#echo ""
+#echo ""
+#echo "case 9:  ESC, buffer_size=10"
+#./nachos -M 10 0 -x ../test/tc2 > test.9.out
+

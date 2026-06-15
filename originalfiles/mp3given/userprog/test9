@@ -1,0 +1,2 @@
+#ESC
+./nachos -M 10 0 -x ../test/tc2 > test.9.out

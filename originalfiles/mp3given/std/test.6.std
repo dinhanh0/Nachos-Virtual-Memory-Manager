@@ -1,0 +1,567 @@
+Forking thread: main
+	interrupts: off -> off
+Putting thread on ready list: main
+	interrupts: off -> off
+Scheduling first Nachos thread
+Switching to thread: main
+
+Starting memmanager with  10 pagebuffers, LRU with 10 bits
+in = 0, in = 1, in = 88, in = 2, 
+
+OUTPUT FOR TESTCASE 0
+
+
+PHYSICAL MEMORY DUMP:
+F = Frame Number
+V = Virtual Page Number
+B = In Page Buffer
+F	 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 
+V	 0  1 88  2  E  E  E  E  E  E  E  E  E  E  E  E  E  E  E  E 
+B	 N  N  N  N  N  N  N  N  N  N  Y  Y  Y  Y  Y  Y  Y  Y  Y  Y 
+
+
+SWAP FILE DUMP:
+Format is [<swap frame>/<virtual page number>]
+
+
+Total free pages: 4102
+MemoryManager dump complete.
+in = 3, in = 7, in = 39, in = 8, in = 40, in = 9, 
+in = 41, in = 10, in = 42, in = 11, in = 43, in = 12, 
+in = 44, in = 13, in = 45, in = 14, in = 46, in = 15, 
+in = 47, in = 16, in = 48, in = 17, in = 49, in = 18, 
+in = 50, in = 19, in = 51, in = 20, in = 52, in = 21, 
+in = 53, in = 22, in = 54, in = 23, in = 55, in = 24, 
+in = 56, in = 25, in = 57, in = 26, in = 58, in = 27, 
+in = 59, in = 28, in = 60, in = 29, in = 61, in = 30, 
+in = 62, in = 31, in = 63, in = 32, in = 64, in = 33, 
+in = 65, in = 34, in = 66, in = 35, in = 67, in = 36, 
+in = 68, in = 37, in = 69, in = 38, in = 70, in = 39, 
+in = 71, in = 1, 
+
+OUTPUT FOR TESTCASE 1
+
+
+PHYSICAL MEMORY DUMP:
+F = Frame Number
+V = Virtual Page Number
+B = In Page Buffer
+F	 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 
+V	39 71 88  2  3 64 33 65 34 66 32 38  1 37 70 36 69 35 68 67 
+B	 N  N  N  N  N  Y  Y  Y  Y  Y  Y  N  N  N  N  Y  N  Y  Y  Y 
+
+
+SWAP FILE DUMP:
+Format is [<swap frame>/<virtual page number>]
+[0 / 7] [1 / 39] [2 / 8] [3 / 40] [4 / 9] [5 / 41]
+[6 / 42] [7 / 10] [8 / 43] [9 / 11] [10 / 44] [11 / 12]
+[12 / 45] [13 / 13] [14 / 46] [15 / 14] [16 / 15] [17 / 47]
+[18 / 16] [19 / 48] [20 / 17] [21 / 49] [22 / 50] [23 / 18]
+[24 / 51] [25 / 19] [26 / 52] [27 / 20] [28 / 53] [29 / 21]
+[30 / 54] [31 / 22] [32 / 55] [33 / 23] [34 / 24] [35 / 56]
+[36 / 25] [37 / 57] [38 / 26] [39 / 58] [40 / 27] [41 / 59]
+[42 / 28] [43 / 60] [44 / 29] [45 / 61] [46 / 30] [47 / 62]
+[48 / 63] [49 / 31] 
+
+Total free pages: 4046
+MemoryManager dump complete.
+
+
+PROGRAM PAGE TABLE CONTENTS:
+entry 0, phys 0, virt 0, legal, invalid
+entry 1, phys 12, virt 1, legal, valid
+entry 2, phys 3, virt 2, legal, valid
+entry 3, phys 4, virt 3, legal, valid
+entry 4, phys 0, virt 4, legal, invalid
+entry 5, phys 0, virt 5, legal, invalid
+entry 6, phys 0, virt 6, legal, invalid
+entry 7, phys 5, virt 7, legal, invalid
+entry 8, phys 7, virt 8, legal, invalid
+entry 9, phys 9, virt 9, legal, invalid
+entry 10, phys 18, virt 10, legal, invalid
+entry 11, phys 16, virt 11, legal, invalid
+entry 12, phys 14, virt 12, legal, invalid
+entry 13, phys 12, virt 13, legal, invalid
+entry 14, phys 10, virt 14, legal, invalid
+entry 15, phys 1, virt 15, legal, invalid
+entry 16, phys 6, virt 16, legal, invalid
+entry 17, phys 8, virt 17, legal, invalid
+entry 18, phys 19, virt 18, legal, invalid
+entry 19, phys 18, virt 19, legal, invalid
+entry 20, phys 16, virt 20, legal, invalid
+entry 21, phys 14, virt 21, legal, invalid
+entry 22, phys 12, virt 22, legal, invalid
+entry 23, phys 10, virt 23, legal, invalid
+entry 24, phys 5, virt 24, legal, invalid
+entry 25, phys 7, virt 25, legal, invalid
+entry 26, phys 9, virt 26, legal, invalid
+entry 27, phys 19, virt 27, legal, invalid
+entry 28, phys 18, virt 28, legal, invalid
+entry 29, phys 16, virt 29, legal, invalid
+entry 30, phys 14, virt 30, legal, invalid
+entry 31, phys 12, virt 31, legal, invalid
+entry 32, phys 10, virt 32, legal, invalid
+entry 33, phys 6, virt 33, legal, invalid
+entry 34, phys 8, virt 34, legal, invalid
+entry 35, phys 17, virt 35, legal, invalid
+entry 36, phys 15, virt 36, legal, invalid
+entry 37, phys 13, virt 37, legal, valid
+entry 38, phys 11, virt 38, legal, valid
+entry 39, phys 0, virt 39, legal, valid
+entry 40, phys 8, virt 40, legal, invalid
+entry 41, phys 19, virt 41, legal, invalid
+entry 42, phys 17, virt 42, legal, invalid
+entry 43, phys 15, virt 43, legal, invalid
+entry 44, phys 13, virt 44, legal, invalid
+entry 45, phys 11, virt 45, legal, invalid
+entry 46, phys 0, virt 46, legal, invalid
+entry 47, phys 5, virt 47, legal, invalid
+entry 48, phys 7, virt 48, legal, invalid
+entry 49, phys 9, virt 49, legal, invalid
+entry 50, phys 17, virt 50, legal, invalid
+entry 51, phys 15, virt 51, legal, invalid
+entry 52, phys 13, virt 52, legal, invalid
+entry 53, phys 11, virt 53, legal, invalid
+entry 54, phys 0, virt 54, legal, invalid
+entry 55, phys 1, virt 55, legal, invalid
+entry 56, phys 6, virt 56, legal, invalid
+entry 57, phys 8, virt 57, legal, invalid
+entry 58, phys 17, virt 58, legal, invalid
+entry 59, phys 15, virt 59, legal, invalid
+entry 60, phys 13, virt 60, legal, invalid
+entry 61, phys 11, virt 61, legal, invalid
+entry 62, phys 0, virt 62, legal, invalid
+entry 63, phys 1, virt 63, legal, invalid
+entry 64, phys 5, virt 64, legal, invalid
+entry 65, phys 7, virt 65, legal, invalid
+entry 66, phys 9, virt 66, legal, invalid
+entry 67, phys 19, virt 67, legal, invalid
+entry 68, phys 18, virt 68, legal, invalid
+entry 69, phys 16, virt 69, legal, valid
+entry 70, phys 14, virt 70, legal, valid
+entry 71, phys 1, virt 71, legal, valid
+entry 72, phys 0, virt 72, legal, invalid
+entry 73, phys 0, virt 73, legal, invalid
+entry 74, phys 0, virt 74, legal, invalid
+entry 75, phys 0, virt 75, legal, invalid
+entry 76, phys 0, virt 76, legal, invalid
+entry 77, phys 0, virt 77, legal, invalid
+entry 78, phys 0, virt 78, legal, invalid
+entry 79, phys 0, virt 79, legal, invalid
+entry 80, phys 0, virt 80, legal, invalid
+entry 81, phys 0, virt 81, legal, invalid
+entry 82, phys 0, virt 82, legal, invalid
+entry 83, phys 0, virt 83, legal, invalid
+entry 84, phys 0, virt 84, legal, invalid
+entry 85, phys 0, virt 85, legal, invalid
+entry 86, phys 0, virt 86, legal, invalid
+entry 87, phys 0, virt 87, legal, invalid
+entry 88, phys 2, virt 88, legal, valid
+in = 4, in = 7, in = 8, in = 9, in = 69, in = 10, 
+in = 68, in = 11, in = 67, in = 12, in = 66, in = 13, 
+in = 65, in = 14, in = 64, in = 15, in = 63, in = 16, 
+in = 62, in = 17, in = 61, in = 18, in = 60, in = 19, 
+in = 59, in = 20, in = 58, in = 21, in = 57, in = 22, 
+in = 56, in = 23, in = 55, in = 24, in = 54, in = 25, 
+in = 53, in = 26, in = 52, in = 27, in = 51, in = 28, 
+in = 50, in = 29, in = 49, in = 30, in = 48, in = 31, 
+in = 47, in = 32, in = 46, in = 33, in = 45, in = 34, 
+in = 44, in = 35, in = 43, in = 36, in = 42, in = 37, 
+in = 41, in = 38, in = 40, in = 39, in = 1, in = 5, 
+
+
+OUTPUT FOR TESTCASE 2
+
+
+PHYSICAL MEMORY DUMP:
+F = Frame Number
+V = Virtual Page Number
+B = In Page Buffer
+F	 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 
+V	32 44 88 33 34  4 35 42 37 38 45 31 46  5 43  1 36 40 41 39 
+B	 Y  Y  N  Y  Y  N  Y  Y  N  N  Y  Y  Y  N  Y  N  N  N  N  N 
+
+
+SWAP FILE DUMP:
+Format is [<swap frame>/<virtual page number>]
+[0 / 7] [1 / 39] [2 / 8] [3 / 40] [4 / 9] [5 / 41]
+[6 / 42] [7 / 10] [8 / 43] [9 / 11] [10 / 44] [11 / 12]
+[12 / 45] [13 / 13] [14 / 46] [15 / 14] [16 / 15] [17 / 47]
+[18 / 16] [19 / 48] [20 / 17] [21 / 49] [22 / 50] [23 / 18]
+[24 / 51] [25 / 19] [26 / 52] [27 / 20] [28 / 53] [29 / 21]
+[30 / 54] [31 / 22] [32 / 55] [33 / 23] [34 / 24] [35 / 56]
+[36 / 25] [37 / 57] [38 / 26] [39 / 58] [40 / 27] [41 / 59]
+[42 / 28] [43 / 60] [44 / 29] [45 / 61] [46 / 30] [47 / 62]
+[48 / 63] [49 / 31] [50 / 64] [51 / 32] [52 / 33] [53 / 65]
+[54 / 34] [55 / 66] [56 / 35] [57 / 36] [58 / 37] [59 / 38]
+[60 / 71] [61 / 70] [62 / 69] [63 / 68] [64 / 67] 
+
+Total free pages: 4031
+MemoryManager dump complete.
+
+
+PROGRAM PAGE TABLE CONTENTS:
+entry 0, phys 0, virt 0, legal, invalid
+entry 1, phys 15, virt 1, legal, valid
+entry 2, phys 3, virt 2, legal, invalid
+entry 3, phys 4, virt 3, legal, invalid
+entry 4, phys 5, virt 4, legal, valid
+entry 5, phys 13, virt 5, legal, valid
+entry 6, phys 0, virt 6, legal, invalid
+entry 7, phys 10, virt 7, legal, invalid
+entry 8, phys 6, virt 8, legal, invalid
+entry 9, phys 7, virt 9, legal, invalid
+entry 10, phys 8, virt 10, legal, invalid
+entry 11, phys 9, virt 11, legal, invalid
+entry 12, phys 17, virt 12, legal, invalid
+entry 13, phys 13, virt 13, legal, invalid
+entry 14, phys 12, virt 14, legal, invalid
+entry 15, phys 3, virt 15, legal, invalid
+entry 16, phys 10, virt 16, legal, invalid
+entry 17, phys 6, virt 17, legal, invalid
+entry 18, phys 7, virt 18, legal, invalid
+entry 19, phys 18, virt 19, legal, invalid
+entry 20, phys 9, virt 20, legal, invalid
+entry 21, phys 15, virt 21, legal, invalid
+entry 22, phys 11, virt 22, legal, invalid
+entry 23, phys 0, virt 23, legal, invalid
+entry 24, phys 3, virt 24, legal, invalid
+entry 25, phys 4, virt 25, legal, invalid
+entry 26, phys 14, virt 26, legal, invalid
+entry 27, phys 7, virt 27, legal, invalid
+entry 28, phys 18, virt 28, legal, invalid
+entry 29, phys 9, virt 29, legal, invalid
+entry 30, phys 17, virt 30, legal, invalid
+entry 31, phys 11, virt 31, legal, invalid
+entry 32, phys 0, virt 32, legal, invalid
+entry 33, phys 3, virt 33, legal, invalid
+entry 34, phys 4, virt 34, legal, invalid
+entry 35, phys 6, virt 35, legal, invalid
+entry 36, phys 16, virt 36, legal, valid
+entry 37, phys 8, virt 37, legal, valid
+entry 38, phys 9, virt 38, legal, valid
+entry 39, phys 19, virt 39, legal, valid
+entry 40, phys 17, virt 40, legal, valid
+entry 41, phys 18, virt 41, legal, valid
+entry 42, phys 7, virt 42, legal, invalid
+entry 43, phys 14, virt 43, legal, invalid
+entry 44, phys 1, virt 44, legal, invalid
+entry 45, phys 10, virt 45, legal, invalid
+entry 46, phys 12, virt 46, legal, invalid
+entry 47, phys 13, virt 47, legal, invalid
+entry 48, phys 15, virt 48, legal, invalid
+entry 49, phys 19, virt 49, legal, invalid
+entry 50, phys 8, virt 50, legal, invalid
+entry 51, phys 16, virt 51, legal, invalid
+entry 52, phys 6, virt 52, legal, invalid
+entry 53, phys 1, virt 53, legal, invalid
+entry 54, phys 10, virt 54, legal, invalid
+entry 55, phys 12, virt 55, legal, invalid
+entry 56, phys 13, virt 56, legal, invalid
+entry 57, phys 17, virt 57, legal, invalid
+entry 58, phys 19, virt 58, legal, invalid
+entry 59, phys 8, virt 59, legal, invalid
+entry 60, phys 16, virt 60, legal, invalid
+entry 61, phys 14, virt 61, legal, invalid
+entry 62, phys 1, virt 62, legal, invalid
+entry 63, phys 4, virt 63, legal, invalid
+entry 64, phys 0, virt 64, legal, invalid
+entry 65, phys 11, virt 65, legal, invalid
+entry 66, phys 15, virt 66, legal, invalid
+entry 67, phys 19, virt 67, legal, invalid
+entry 68, phys 18, virt 68, legal, invalid
+entry 69, phys 16, virt 69, legal, invalid
+entry 70, phys 14, virt 70, legal, invalid
+entry 71, phys 1, virt 71, legal, invalid
+entry 72, phys 0, virt 72, legal, invalid
+entry 73, phys 0, virt 73, legal, invalid
+entry 74, phys 0, virt 74, legal, invalid
+entry 75, phys 0, virt 75, legal, invalid
+entry 76, phys 0, virt 76, legal, invalid
+entry 77, phys 0, virt 77, legal, invalid
+entry 78, phys 0, virt 78, legal, invalid
+entry 79, phys 0, virt 79, legal, invalid
+entry 80, phys 0, virt 80, legal, invalid
+entry 81, phys 0, virt 81, legal, invalid
+entry 82, phys 0, virt 82, legal, invalid
+entry 83, phys 0, virt 83, legal, invalid
+entry 84, phys 0, virt 84, legal, invalid
+entry 85, phys 0, virt 85, legal, invalid
+entry 86, phys 0, virt 86, legal, invalid
+entry 87, phys 0, virt 87, legal, invalid
+entry 88, phys 2, virt 88, legal, valid
+in = 71, in = 70, in = 69, in = 37, in = 68, in = 36, 
+in = 67, in = 35, in = 66, in = 34, in = 65, in = 33, 
+in = 64, in = 32, in = 63, in = 31, in = 62, in = 30, 
+in = 61, in = 29, in = 60, in = 28, in = 59, in = 27, 
+in = 58, in = 26, in = 57, in = 25, in = 56, in = 24, 
+in = 55, in = 23, in = 54, in = 22, in = 53, in = 21, 
+in = 52, in = 20, in = 51, in = 19, in = 50, in = 18, 
+in = 49, in = 17, in = 48, in = 16, in = 47, in = 15, 
+in = 46, in = 14, in = 45, in = 13, in = 44, in = 12, 
+in = 43, in = 11, in = 42, in = 10, in = 41, in = 9, 
+in = 40, in = 8, in = 39, in = 7, in = 6, in = 1, 
+
+
+OUTPUT FOR TESTCASE 2
+
+
+PHYSICAL MEMORY DUMP:
+F = Frame Number
+V = Virtual Page Number
+B = In Page Buffer
+F	 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 
+V	42 39 88  9  7 45 40  6 10 11  8 12 43  5  1 46 41 13 14 44 
+B	 Y  N  N  N  N  Y  N  N  Y  Y  N  Y  Y  N  N  Y  N  Y  Y  Y 
+
+
+SWAP FILE DUMP:
+Format is [<swap frame>/<virtual page number>]
+[0 / 7] [1 / 39] [2 / 8] [3 / 40] [4 / 9] [5 / 41]
+[6 / 42] [7 / 10] [8 / 43] [9 / 11] [10 / 44] [11 / 12]
+[12 / 45] [13 / 13] [14 / 46] [15 / 14] [16 / 15] [17 / 47]
+[18 / 16] [19 / 48] [20 / 17] [21 / 49] [22 / 50] [23 / 18]
+[24 / 51] [25 / 19] [26 / 52] [27 / 20] [28 / 53] [29 / 21]
+[30 / 54] [31 / 22] [32 / 55] [33 / 23] [34 / 24] [35 / 56]
+[36 / 25] [37 / 57] [38 / 26] [39 / 58] [40 / 27] [41 / 59]
+[42 / 28] [43 / 60] [44 / 29] [45 / 61] [46 / 30] [47 / 62]
+[48 / 63] [49 / 31] [50 / 64] [51 / 32] [52 / 33] [53 / 65]
+[54 / 34] [55 / 66] [56 / 35] [57 / 36] [58 / 37] [59 / 38]
+[60 / 71] [61 / 70] [62 / 69] [63 / 68] [64 / 67] 
+
+Total free pages: 4031
+MemoryManager dump complete.
+
+
+PROGRAM PAGE TABLE CONTENTS:
+entry 0, phys 0, virt 0, legal, invalid
+entry 1, phys 14, virt 1, legal, valid
+entry 2, phys 3, virt 2, legal, invalid
+entry 3, phys 4, virt 3, legal, invalid
+entry 4, phys 5, virt 4, legal, invalid
+entry 5, phys 13, virt 5, legal, valid
+entry 6, phys 7, virt 6, legal, valid
+entry 7, phys 4, virt 7, legal, valid
+entry 8, phys 10, virt 8, legal, valid
+entry 9, phys 3, virt 9, legal, valid
+entry 10, phys 8, virt 10, legal, invalid
+entry 11, phys 9, virt 11, legal, invalid
+entry 12, phys 11, virt 12, legal, invalid
+entry 13, phys 17, virt 13, legal, invalid
+entry 14, phys 18, virt 14, legal, invalid
+entry 15, phys 14, virt 15, legal, invalid
+entry 16, phys 4, virt 16, legal, invalid
+entry 17, phys 10, virt 17, legal, invalid
+entry 18, phys 3, virt 18, legal, invalid
+entry 19, phys 8, virt 19, legal, invalid
+entry 20, phys 9, virt 20, legal, invalid
+entry 21, phys 11, virt 21, legal, invalid
+entry 22, phys 17, virt 22, legal, invalid
+entry 23, phys 18, virt 23, legal, invalid
+entry 24, phys 14, virt 24, legal, invalid
+entry 25, phys 4, virt 25, legal, invalid
+entry 26, phys 10, virt 26, legal, invalid
+entry 27, phys 3, virt 27, legal, invalid
+entry 28, phys 8, virt 28, legal, invalid
+entry 29, phys 9, virt 29, legal, invalid
+entry 30, phys 19, virt 30, legal, invalid
+entry 31, phys 5, virt 31, legal, invalid
+entry 32, phys 15, virt 32, legal, invalid
+entry 33, phys 7, virt 33, legal, invalid
+entry 34, phys 1, virt 34, legal, invalid
+entry 35, phys 6, virt 35, legal, invalid
+entry 36, phys 16, virt 36, legal, invalid
+entry 37, phys 8, virt 37, legal, invalid
+entry 38, phys 9, virt 38, legal, invalid
+entry 39, phys 1, virt 39, legal, valid
+entry 40, phys 6, virt 40, legal, valid
+entry 41, phys 16, virt 41, legal, valid
+entry 42, phys 0, virt 42, legal, invalid
+entry 43, phys 12, virt 43, legal, invalid
+entry 44, phys 19, virt 44, legal, invalid
+entry 45, phys 5, virt 45, legal, invalid
+entry 46, phys 15, virt 46, legal, invalid
+entry 47, phys 7, virt 47, legal, invalid
+entry 48, phys 1, virt 48, legal, invalid
+entry 49, phys 6, virt 49, legal, invalid
+entry 50, phys 16, virt 50, legal, invalid
+entry 51, phys 0, virt 51, legal, invalid
+entry 52, phys 12, virt 52, legal, invalid
+entry 53, phys 19, virt 53, legal, invalid
+entry 54, phys 5, virt 54, legal, invalid
+entry 55, phys 15, virt 55, legal, invalid
+entry 56, phys 7, virt 56, legal, invalid
+entry 57, phys 1, virt 57, legal, invalid
+entry 58, phys 6, virt 58, legal, invalid
+entry 59, phys 16, virt 59, legal, invalid
+entry 60, phys 0, virt 60, legal, invalid
+entry 61, phys 12, virt 61, legal, invalid
+entry 62, phys 11, virt 62, legal, invalid
+entry 63, phys 17, virt 63, legal, invalid
+entry 64, phys 18, virt 64, legal, invalid
+entry 65, phys 14, virt 65, legal, invalid
+entry 66, phys 4, virt 66, legal, invalid
+entry 67, phys 10, virt 67, legal, invalid
+entry 68, phys 3, virt 68, legal, invalid
+entry 69, phys 0, virt 69, legal, invalid
+entry 70, phys 12, virt 70, legal, invalid
+entry 71, phys 11, virt 71, legal, invalid
+entry 72, phys 0, virt 72, legal, invalid
+entry 73, phys 0, virt 73, legal, invalid
+entry 74, phys 0, virt 74, legal, invalid
+entry 75, phys 0, virt 75, legal, invalid
+entry 76, phys 0, virt 76, legal, invalid
+entry 77, phys 0, virt 77, legal, invalid
+entry 78, phys 0, virt 78, legal, invalid
+entry 79, phys 0, virt 79, legal, invalid
+entry 80, phys 0, virt 80, legal, invalid
+entry 81, phys 0, virt 81, legal, invalid
+entry 82, phys 0, virt 82, legal, invalid
+entry 83, phys 0, virt 83, legal, invalid
+entry 84, phys 0, virt 84, legal, invalid
+entry 85, phys 0, virt 85, legal, invalid
+entry 86, phys 0, virt 86, legal, invalid
+entry 87, phys 0, virt 87, legal, invalid
+entry 88, phys 2, virt 88, legal, valid
+in = 38, in = 37, in = 10, in = 36, in = 11, in = 35, 
+in = 12, in = 34, in = 13, in = 33, in = 14, in = 32, 
+in = 15, in = 31, in = 16, in = 30, in = 17, in = 29, 
+in = 18, in = 28, in = 19, in = 27, in = 20, in = 26, 
+in = 21, in = 25, in = 22, in = 24, in = 23, in = 27, 
+in = 19, in = 28, in = 18, in = 29, in = 17, in = 30, 
+in = 16, in = 31, in = 15, in = 32, in = 14, in = 33, 
+in = 13, in = 34, in = 12, in = 35, in = 11, in = 36, 
+in = 10, in = 37, in = 9, in = 38, in = 8, in = 39, 
+in = 1, 
+
+OUTPUT FOR TESTCASE 2
+
+
+PHYSICAL MEMORY DUMP:
+F = Frame Number
+V = Virtual Page Number
+B = In Page Buffer
+F	 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 
+V	14 39 88 10  7 11  1  6 37 36  8 34 13 31 33 38 32 12  9 35 
+B	 Y  N  N  Y  N  Y  N  N  N  N  N  Y  Y  Y  Y  N  Y  Y  N  Y 
+
+
+SWAP FILE DUMP:
+Format is [<swap frame>/<virtual page number>]
+[0 / 7] [1 / 39] [2 / 8] [3 / 40] [4 / 9] [5 / 41]
+[6 / 42] [7 / 10] [8 / 43] [9 / 11] [10 / 44] [11 / 12]
+[12 / 45] [13 / 13] [14 / 46] [15 / 14] [16 / 15] [17 / 47]
+[18 / 16] [19 / 48] [20 / 17] [21 / 49] [22 / 50] [23 / 18]
+[24 / 51] [25 / 19] [26 / 52] [27 / 20] [28 / 53] [29 / 21]
+[30 / 54] [31 / 22] [32 / 55] [33 / 23] [34 / 24] [35 / 56]
+[36 / 25] [37 / 57] [38 / 26] [39 / 58] [40 / 27] [41 / 59]
+[42 / 28] [43 / 60] [44 / 29] [45 / 61] [46 / 30] [47 / 62]
+[48 / 63] [49 / 31] [50 / 64] [51 / 32] [52 / 33] [53 / 65]
+[54 / 34] [55 / 66] [56 / 35] [57 / 36] [58 / 37] [59 / 38]
+[60 / 71] [61 / 70] [62 / 69] [63 / 68] [64 / 67] 
+
+Total free pages: 4031
+MemoryManager dump complete.
+
+
+PROGRAM PAGE TABLE CONTENTS:
+entry 0, phys 0, virt 0, legal, invalid
+entry 1, phys 6, virt 1, legal, valid
+entry 2, phys 3, virt 2, legal, invalid
+entry 3, phys 4, virt 3, legal, invalid
+entry 4, phys 5, virt 4, legal, invalid
+entry 5, phys 13, virt 5, legal, invalid
+entry 6, phys 7, virt 6, legal, valid
+entry 7, phys 4, virt 7, legal, valid
+entry 8, phys 10, virt 8, legal, valid
+entry 9, phys 18, virt 9, legal, valid
+entry 10, phys 3, virt 10, legal, invalid
+entry 11, phys 5, virt 11, legal, invalid
+entry 12, phys 17, virt 12, legal, invalid
+entry 13, phys 12, virt 13, legal, invalid
+entry 14, phys 0, virt 14, legal, invalid
+entry 15, phys 6, virt 15, legal, invalid
+entry 16, phys 1, virt 16, legal, invalid
+entry 17, phys 10, virt 17, legal, invalid
+entry 18, phys 3, virt 18, legal, invalid
+entry 19, phys 9, virt 19, legal, invalid
+entry 20, phys 17, virt 20, legal, invalid
+entry 21, phys 11, virt 21, legal, invalid
+entry 22, phys 0, virt 22, legal, invalid
+entry 23, phys 16, virt 23, legal, invalid
+entry 24, phys 14, virt 24, legal, invalid
+entry 25, phys 12, virt 25, legal, invalid
+entry 26, phys 19, virt 26, legal, invalid
+entry 27, phys 5, virt 27, legal, invalid
+entry 28, phys 8, virt 28, legal, invalid
+entry 29, phys 18, virt 29, legal, invalid
+entry 30, phys 15, virt 30, legal, invalid
+entry 31, phys 13, virt 31, legal, invalid
+entry 32, phys 16, virt 32, legal, invalid
+entry 33, phys 14, virt 33, legal, invalid
+entry 34, phys 11, virt 34, legal, invalid
+entry 35, phys 19, virt 35, legal, invalid
+entry 36, phys 9, virt 36, legal, valid
+entry 37, phys 8, virt 37, legal, valid
+entry 38, phys 15, virt 38, legal, valid
+entry 39, phys 1, virt 39, legal, valid
+entry 40, phys 6, virt 40, legal, invalid
+entry 41, phys 16, virt 41, legal, invalid
+entry 42, phys 0, virt 42, legal, invalid
+entry 43, phys 12, virt 43, legal, invalid
+entry 44, phys 19, virt 44, legal, invalid
+entry 45, phys 5, virt 45, legal, invalid
+entry 46, phys 15, virt 46, legal, invalid
+entry 47, phys 7, virt 47, legal, invalid
+entry 48, phys 1, virt 48, legal, invalid
+entry 49, phys 6, virt 49, legal, invalid
+entry 50, phys 16, virt 50, legal, invalid
+entry 51, phys 0, virt 51, legal, invalid
+entry 52, phys 12, virt 52, legal, invalid
+entry 53, phys 19, virt 53, legal, invalid
+entry 54, phys 5, virt 54, legal, invalid
+entry 55, phys 15, virt 55, legal, invalid
+entry 56, phys 7, virt 56, legal, invalid
+entry 57, phys 1, virt 57, legal, invalid
+entry 58, phys 6, virt 58, legal, invalid
+entry 59, phys 16, virt 59, legal, invalid
+entry 60, phys 0, virt 60, legal, invalid
+entry 61, phys 12, virt 61, legal, invalid
+entry 62, phys 11, virt 62, legal, invalid
+entry 63, phys 17, virt 63, legal, invalid
+entry 64, phys 18, virt 64, legal, invalid
+entry 65, phys 14, virt 65, legal, invalid
+entry 66, phys 4, virt 66, legal, invalid
+entry 67, phys 10, virt 67, legal, invalid
+entry 68, phys 3, virt 68, legal, invalid
+entry 69, phys 0, virt 69, legal, invalid
+entry 70, phys 12, virt 70, legal, invalid
+entry 71, phys 11, virt 71, legal, invalid
+entry 72, phys 0, virt 72, legal, invalid
+entry 73, phys 0, virt 73, legal, invalid
+entry 74, phys 0, virt 74, legal, invalid
+entry 75, phys 0, virt 75, legal, invalid
+entry 76, phys 0, virt 76, legal, invalid
+entry 77, phys 0, virt 77, legal, invalid
+entry 78, phys 0, virt 78, legal, invalid
+entry 79, phys 0, virt 79, legal, invalid
+entry 80, phys 0, virt 80, legal, invalid
+entry 81, phys 0, virt 81, legal, invalid
+entry 82, phys 0, virt 82, legal, invalid
+entry 83, phys 0, virt 83, legal, invalid
+entry 84, phys 0, virt 84, legal, invalid
+entry 85, phys 0, virt 85, legal, invalid
+entry 86, phys 0, virt 86, legal, invalid
+entry 87, phys 0, virt 87, legal, invalid
+entry 88, phys 2, virt 88, legal, valid
+in = 0, Shutdown, initiated by user program.
+Machine halting!
+
+Ticks: total 452084, idle 0, system 5230, user 446854
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 260
+Network I/O: packets received 0, sent 0
+
+Cleaning up...
+

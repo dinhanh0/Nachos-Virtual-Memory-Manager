@@ -1,0 +1,10 @@
+JC = /usr/site/jdk-1.2.01/bin/javac -classpath .:../machine:../filesys:../userprog:../threads
+
+all:
+	${JC} ../threads/Nachos.java
+
+cleanclass:
+	(find .. -name "*.class" -print | xargs rm)
+
+cleanbackup:
+	(find .. -name "*~" -print | xargs rm)
